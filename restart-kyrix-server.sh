@@ -25,6 +25,13 @@ elif [ "x$DATA" = "xdots-uniform" ]; then
     SRCDATA_DB_TEST_TABLE=dots_uniform
     SRCDATA_DB_LOAD_CMD=/kyrix/compiler/examples/dots-uniform/reload-dots-uniform.sh
     KYRIX_DB_INDEX_CMD=/kyrix/compiler/examples/dots-uniform/reindex-dots-uniform.sh
+elif [ "x$DATA" = "xrects-uniform" ]; then
+    echo "using 'rects-uniform' dataset..."
+    SRCDATA_PROJECT_NAME=rects_uniform
+    SRCDATA_DB=rects_uniform
+    SRCDATA_DB_TEST_TABLE=rects_uniform
+    SRCDATA_DB_LOAD_CMD=/kyrix/compiler/examples/rects-uniform/reload-rects-uniform.sh
+    KYRIX_DB_INDEX_CMD=/kyrix/compiler/examples/rects-uniform/reindex-rects-uniform.sh
 elif [ "x$DATA" = "xdots-skewed-80-20" ]; then
     echo "using 'dots-skewed-80-20' dataset..."
     SRCDATA_PROJECT_NAME=dots_skewed_80_20
