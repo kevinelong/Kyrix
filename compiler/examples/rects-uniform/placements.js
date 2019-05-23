@@ -1,8 +1,8 @@
 var rectsPlacement = {
-    "centroid_x": "col:x1",
-    "centroid_y": "col:y1",
-    "width": "col:x2",
-    "height": "col:y2"
+    "centroid_x": "col:x",
+    "centroid_y": "col:y",
+    "width": "col:w",
+    "height": "col:h"
 };
 
 module.exports = {
